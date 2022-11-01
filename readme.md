@@ -1,7 +1,7 @@
 <samp>
   <h2>Summary</h2>
   <p>
-
+    <a href="https://twitter.com/feriaspqp">@feriaspqp</a> is a <a href="https://twitter.com/">Twitter</a> bot made using <li><a href="https://www.tweepy.org/">tweepy</a></li> that tweets that remaining days until next vacation of the Technical High School of Campinas.
   </p>
   <!-- <h2>Run</h2>
 
@@ -25,9 +25,11 @@
 
   # launch the bot
   $ python ./feriaspqp/bot.py
-  ``` -->
+  ```
+  -->
   <h2>References</h2>
   <ul>
+    <li><a href="https://twitter.com/">Twitter</a></li>
     <li><a href="https://www.python.org/">Python</a></li>
     <li><a href="https://www.tweepy.org/">tweepy</a></li>
   </ul>
