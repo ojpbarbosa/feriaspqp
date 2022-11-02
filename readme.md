@@ -24,9 +24,9 @@
   $ pip install -r requirements.txt
 
   # launch the bot
-  $ python ./bot.py
+  $ python ./feriaspqp.py
   ```
-  <b>Note:</b> Creating a .env file with Twitter credentials is <i>required</i> in order to run feriaspqp.
+  <b>Note:</b> Creating the .env file with Twitter credentials is <i>required</i> in order to run feriaspqp.
 
   <h2>References</h2>
   <ul>
