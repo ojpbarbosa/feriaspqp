@@ -54,10 +54,10 @@ if __name__ == '__main__':
     api = tweepy.API(auth)
 
     while True:
-        if datetime.datetime.now().hour == 16 and datetime.datetime.now().minute == 20:
+        if datetime.datetime.now().hour == 12 and datetime.datetime.now().minute == 15:
             try:
                 remaining_days = datetime.date(
-                    2022, 6, 30) - datetime.date.today()
+                    2023, 6, 30) - datetime.date.today()
 
                 swearing = [' caraio', ' pqp', ' porra',
                             ', num guento mais', ' bucetaaaaaaaa', ', ovo chora 😭']
@@ -66,7 +66,7 @@ if __name__ == '__main__':
                     random.choice(swearing) + ' ' + \
                     random.choice(emojis)
 
-                # api.update_status(tweet)
+                api.update_status(tweet)
                 print(tweet)
             except Exception as error:
                 print(error)
