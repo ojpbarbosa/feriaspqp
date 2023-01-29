@@ -57,7 +57,7 @@ if __name__ == '__main__':
         if datetime.datetime.now().hour == 16 and datetime.datetime.now().minute == 20:
             try:
                 remaining_days = datetime.date(
-                    2022, 12, 15) - datetime.date.today()
+                    2022, 6, 30) - datetime.date.today()
 
                 swearing = [' caraio', ' pqp', ' porra',
                             ', num guento mais', ' bucetaaaaaaaa', ', ovo chora 😭']
@@ -72,4 +72,4 @@ if __name__ == '__main__':
                 print(error)
                 break
 
-        sleep(30)
+        sleep(20)
