@@ -5,6 +5,7 @@ from time import sleep
 
 from dotenv import load_dotenv
 import tweepy
+from flask import Flask
 
 
 emojis = [
@@ -37,7 +38,11 @@ emojis = [
     '\U0001F4F7'
 ]
 
-if __name__ == '__main__':
+
+app = Flask(__name__)
+
+@app.route('/')
+def index():
     load_dotenv()
 
     API_KEY = getenv('API_KEY')
@@ -73,3 +78,11 @@ if __name__ == '__main__':
                 break
 
         sleep(45)
+
+    return 'férias, pqp!'
+
+if __name__ == '__main__':
+    app.run(
+      host='0.0.0.0',
+      port=3000
+    )
