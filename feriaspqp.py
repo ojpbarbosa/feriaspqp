@@ -72,4 +72,4 @@ if __name__ == '__main__':
                 print(error)
                 break
 
-        sleep(20)
+        sleep(45)
