@@ -43,6 +43,10 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
+    return 'férias, pqp!'
+
+@app.route('/run')
+def run():
     load_dotenv()
 
     API_KEY = getenv('API_KEY')
@@ -79,10 +83,8 @@ def index():
 
         sleep(45)
 
-    return 'férias, pqp!'
-
 if __name__ == '__main__':
     app.run(
       host='0.0.0.0',
-      port=3000
+      port=random.randint(2000, 9000)
     )
